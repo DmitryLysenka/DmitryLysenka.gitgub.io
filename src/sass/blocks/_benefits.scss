@@ -3,14 +3,6 @@
     padding: 71px 0 82px 0;
     background:#F6F6F6;;
 
-    &__header {
-        display: block;
-        font-weight: 700;
-        font-size: 30px;
-        text-align: center;
-        color: #0D0D0D;
-    }
-
     &__wrapper {
         margin-top: 60px;
         display: flex;
@@ -42,8 +34,5 @@
         span {
             color: $main-color;
         }
-    }
-
-    
-        
+    }  
 }
