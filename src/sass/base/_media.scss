@@ -100,10 +100,36 @@
         }
         
     }
+
+    .carousel {
+        .carousel__inner {
+            .slick-dots {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                li::marker {
+                    font-size: 0;
+                }
+                button {
+                    font-size: 0;
+                    padding: 0;
+                    border-radius: 50%;
+                    border: none;
+                    width: 10px;
+                    height: 10px;
+                    background-color: gray;
+                }
+                .slick-active button {
+                    background: $main-color;
+                }
+                
+            }
+        }
+    }
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .header {
         padding: 0 25px 0 25px;
         &__logo {
@@ -211,6 +237,36 @@
             
         }
     }
+    .carousel {
+        padding: 45px;
+        .carousel__inner {
+            width: 550px;
+            img {
+                width: 550px;
+            }
+            .slick-dots {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                li::marker {
+                    font-size: 0;
+                }
+                button {
+                    font-size: 0;
+                    padding: 0;
+                    border-radius: 50%;
+                    border: none;
+                    width: 10px;
+                    height: 10px;
+                    background-color: gray;
+                }
+                .slick-active button {
+                    background: $main-color;
+                }
+                
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -308,6 +364,36 @@
             
         }
     }
+    .carousel {
+        padding: 35px;
+        .carousel__inner {
+            width: 450px;
+            img {
+                width: 450px;
+            }
+            .slick-dots {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                li::marker {
+                    font-size: 0;
+                }
+                button {
+                    font-size: 0;
+                    padding: 0;
+                    border-radius: 50%;
+                    border: none;
+                    width: 10px;
+                    height: 10px;
+                    background-color: gray;
+                }
+                .slick-active button {
+                    background: $main-color;
+                }
+                
+            }
+        }
+    }
 }
 
 
@@ -343,11 +429,11 @@
             align-items: center;
         }
         &__header {
-            font-size: 20px;    
+            font-size: 17px;    
         }
         &__subheader {
             margin-top: 10px;
-            font-size: 17px;
+            font-size: 15px;
             text-align: center;
         }
         &__icons {
@@ -357,8 +443,8 @@
         &__icon {
             font-size: 11px;
             img {
-                height: 38px;
-                width: 40px;
+                height: 36px;
+                width: 38px;
             }
         }
         .button_main {
@@ -375,7 +461,7 @@
     .benefits {
         padding: 30px 0 30px 0;
         .title {
-            font-size: 20px;
+            font-size: 17px;
         }
         &__wrapper {
             flex-direction: column;
@@ -383,19 +469,23 @@
         }
         &__item {
             max-width: 290px;
+            img {
+                width: 50px;
+                height: 45px;
+            }
         }
         &__title {
-            font-size: 17px;
+            font-size: 13px;
         }
         &__descr {
             margin-top: 5px;
-            font-size: 15px;
+            font-size: 11px;
         }
     }
     .consultation {
         position: relative;
         padding: 20px 0 20px 0;
-        min-height: 580px;
+        min-height: 500px;
         .title_left {
             font-size: 16px;
             text-align: center;
@@ -411,11 +501,43 @@
             width: 60%;
             input {
                 font-size: 12px;
+                height: 38px;
             }
             .button_submit {
                 font-size: 12px;
+                height: 38px;
             }
             
+        }
+    }
+    .carousel {
+        padding: 25px;
+        .carousel__inner {
+            width: 270px;
+            img {
+                width: 270px;
+            }
+            .slick-dots {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                li::marker {
+                    font-size: 0;
+                }
+                button {
+                    font-size: 0;
+                    padding: 0;
+                    border-radius: 50%;
+                    border: none;
+                    width: 5px;
+                    height: 5px;
+                    background-color: gray;
+                }
+                .slick-active button {
+                    background: $main-color;
+                }
+                
+            }
         }
     }
 }
