@@ -1,0 +1,126 @@
+@media (max-width: 575px) {
+    .header {
+        padding: 10px 20px 10px 20px;
+        &__logo {
+            img{
+                width: 180px;
+                height: 40px;
+            }
+        }
+        &__official {
+            display: none;
+        }
+        &__phone {
+            font-size: 16px;
+            margin: 0;
+            margin-top: 10px;
+        }
+        .button {
+            margin-top: 5px;
+            width: 155px;
+            height: 35px;
+            font-size: 12px;
+        }
+    }
+    
+    .promo {
+        min-height: 400px;
+        padding-bottom: 20px;
+        &__wrapper {
+            margin: 0;
+            margin-top: 10px;
+            align-items: center;
+        }
+        &__header {
+            font-size: 23px;    
+        }
+        &__subheader {
+            margin-top: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        &__icons {
+            margin-top: 20px;
+            width: 400px;
+            justify-content: space-between;
+        }
+        &__icon {
+            font-size: 12px;
+            img {
+                height: 50px;
+                width: 48px;
+            }
+        }
+        .button_main {
+            margin-top: 20px;
+            width: 250px;
+        }
+        &__link {
+            font-size: 13px;
+        }
+    }
+
+    .benefits {
+        padding: 30px 0 30px 0;
+        .title {
+            font-size: 25px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .consultation {
+        position: relative;
+        padding: 36px 5px 36px 5px;
+        min-height: 580px;
+        .title_left {
+            font-size: 18px;
+            text-align: center;
+        }
+        &__descr {
+            font-size: 16px;
+            text-align: center;
+        }
+        .feed-form {
+            position: absolute;
+            width: 50%;
+            left: 25%;
+            right: 25%;
+            .button_submit {
+                font-size: 13px;
+            }
+            
+        }
+    }
+    .carousel {
+        padding: 35px;
+        .carousel__inner {
+            width: 450px;
+            img {
+                width: 450px;
+            }
+            .slick-dots {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                li::marker {
+                    font-size: 0;
+                }
+                button {
+                    font-size: 0;
+                    padding: 0;
+                    border-radius: 50%;
+                    border: none;
+                    width: 10px;
+                    height: 10px;
+                    background-color: gray;
+                }
+                .slick-active button {
+                    background: $main-color;
+                }
+                
+            }
+        }
+    }
+}
