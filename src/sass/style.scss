@@ -6,6 +6,9 @@
 .container {
     max-width: 950px;
     margin: 0 auto;
+    a {
+        cursor: pointer;
+    }
 }
 @import 'blocks/promo';
 @import 'blocks/header';
@@ -17,6 +20,7 @@
 @import 'blocks/carousel';
 @import 'blocks/catalog';
 @import 'blocks/feed';
+@import 'blocks/footer';
 @import 'base/media992';
 @import 'base/media768';
 @import 'base/media575';
